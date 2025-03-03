@@ -48,7 +48,6 @@ Part 4 | Exploratory Analysis as a duplicate comparison for Tableau output (Mich
 
 ![Popular Bar Graph](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/popoular_bar.png)
 ![Popoular Boxplot](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/popular_boxplot.png)
-![Popular Scatter](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/popular_scatter.png)
 
 Part 5 | Supervised Machine Learning: Using known datasets for popular and unpopular (Michelle)
 
