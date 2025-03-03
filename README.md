@@ -46,9 +46,9 @@ Created a SQL database in Postgres through pgAdmin. The table schema sql file ge
 
 Part 4 | Exploratory Analysis as a duplicate comparison for Tableau output (Michelle and Wayne)
 
-![Popular Bar Graph]()
-![Popoular Boxplot]()
-![Popular Scatter]()
+![Popular Bar Graph](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/popoular_bar.png)
+![Popoular Boxplot](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/popular_boxplot.png)
+![Popular Scatter](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/popular_scatter.png)
 
 Part 5 | Supervised Machine Learning: Using known datasets for popular and unpopular (Michelle)
 
@@ -58,15 +58,15 @@ Machine Learning Models Used:
 3) Support Vector Machine (SVM)
 
 Feature Importance and Confusion Matrices were assessed for each model:
-![Feature Importance Log]()
-![Feature Importance RF]()
-![Feature Importance SVM]()
+![Feature Importance Log](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/feat_importance_log.png)
+![Feature Importance RF](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/feat_importance_rf.png)
+![Feature Importance SVM](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/feat_importance_svm.png)
 
-![CM Plots]()
+![CM Plots](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/cm_plots.png)
 
 Final Output:
-![Accuracy]()
-![Performance]()
+![Accuracy](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/Accuracy.png)
+![Performance](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/model_performance.png)
 
 Random Forest was the highest rate of accuracy at 82%. It handles non-linear data better than other models. Most music attributes don't have a simple linear relationship when it comes to popularity. It can capture more complex, non-linear interactions between features without needing manual transormations. This would allow for using this model with additional datasets outside of Spotify that had different attributes. 
 
