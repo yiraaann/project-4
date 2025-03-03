@@ -1,0 +1,59 @@
+{
+    "tables": {
+        "unpopular_songs_augmented_metadata": {
+            "columns": {
+                "num_id": {
+                    "sdtype": "id"
+                },
+                "track_id": {
+                    "sdtype": "categorical"
+                },
+                "track_popularity": {
+                    "sdtype": "numerical"
+                },
+                "artist_popularity": {
+                    "sdtype": "numerical"
+                },
+                "danceability": {
+                    "sdtype": "numerical"
+                },
+                "energy": {
+                    "sdtype": "numerical"
+                },
+                "key": {
+                    "sdtype": "numerical"
+                },
+                "speechiness": {
+                    "sdtype": "numerical"
+                },
+                "acousticness": {
+                    "sdtype": "numerical"
+                },
+                "instrumentalness": {
+                    "sdtype": "numerical"
+                },
+                "liveness": {
+                    "sdtype": "numerical"
+                },
+                "valence": {
+                    "sdtype": "numerical"
+                },
+                "tempo": {
+                    "sdtype": "numerical"
+                },
+                "duration_ms": {
+                    "sdtype": "numerical"
+                },
+                "artist_genres_concat": {
+                    "sdtype": "categorical"
+                },
+                "transformed_loudness": {
+                    "sdtype": "numerical"
+                }
+            },
+            "primary_key": "num_id"
+        }
+    },
+    "relationships": [],
+    "METADATA_SPEC_VERSION": "V1"
+}
