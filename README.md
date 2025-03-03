@@ -66,7 +66,6 @@ Feature Importance and Confusion Matrices were assessed for each model:
 
 Final Output:
 ![Accuracy](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/Accuracy.png)
-![Performance](https://github.com/yiraaann/project-4/blob/main/Moody%20-%20Project%204/Images/model_performance.png)
 
 Random Forest was the highest rate of accuracy at 82%. It handles non-linear data better than other models. Most music attributes don't have a simple linear relationship when it comes to popularity. It can capture more complex, non-linear interactions between features without needing manual transormations. This would allow for using this model with additional datasets outside of Spotify that had different attributes. 
 
