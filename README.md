@@ -2,7 +2,7 @@
 
 # Team Members:
 * Michelle Moody: Data Acquisition, EDA, ML Modeling
-* Yiran Zhang: ERD, SQL, Lyric API Analysis → scrape/parse → language model
+* Yiran Zhang: ERD, SQL, Lyric API Analysis → scrape/parse → language model, Spotify & Genius APIs
 * Wayne Mitchell: EDA (initial insights), ML Modeling, Lyric Analysis
 * Ashley Cooper: Data Acquisition, EDA (initial insights), Tableau
 
@@ -25,7 +25,7 @@ Programming & Software:
 * PostgresSQL: relational database management system
 * Jupyter Notebook: used for data cleaning and processing
 * VBS:
-* Google Colab:
+* Google Colab: used for cloud-based experimentation with pretrained language models from Hugging Face
 * Tableau:
 
 Part 1 | ETL (Michelle, Ashley, Wayne)
@@ -77,6 +77,20 @@ Once it was determined that Random Forest performed at the hightest accuracy. Th
 
 Part 7 | Lyric API Analysis (Yiran)
 
+The goal of this analysis was to examine words and language patterns used in popular & unpopular songs' lyrics. Most of the time was spent in ETL to set up API calls and creating processes to scrape lyrics for each song in an efficient manner, resulting in a very large dataset of popular songs and their full lyrics. 
+
+Process
+* created popular_lyrics dataset to focus on only songs with a popularity score of 50+
+* cleaned up popular_lyrics dataset to drop duplicate songs (in order to not have double or triple lyrics for future language analysis) and remove special characters
+* loaded popular_lyrics dataset into Google colab to use hugging face pretrained models
+* trialed several pretrained language models, focusing primarily on zero-shot classification for simplicity
+  * additionally looked into training a model from scratch (https://huggingface.co/blog/how-to-train) using popular vs unpopular lyrics datasets
+* selected BART language model to categorize lyrics based on "positive", "negative", and "neutral" messaging
+* other attempts included "happy", "sad", and "neutral"
+* unsuccessful attempts to categorize full songs' lyrics; given more time, a line-by-line analysis would be more helpful
+
+Conclusion: Ideally, using "popular" and "unpopular" song lyrics datasets would help train a language model if given enough time and resources. Using a pretrained model, however, is useful in categorizing and analyzing sentiment. It would be interesting to experiment with different ways of breaking down a song so that smaller pieces of the song (e.g., line by line) are passed through the model for more precision. With more time, this could be a powerful tool for analyzing the content of lyrics.
+
 Part 8 | Tableau Dashboard (Ashley)
 
 # Data Sources:
@@ -84,12 +98,14 @@ Part 8 | Tableau Dashboard (Ashley)
 * https://www.kaggle.com/datasets/estienneggx/spotify-unpopular-songs
 * https://developer.spotify.com/documentation/web-api/reference/get-audio-features
 * https://docs.genius.com/
+* https://pypi.org/project/lyricsgenius/
+* https://huggingface.co/facebook/bart-large-mnli
 
 # Challenges:
 1) Originally didn't have an unpopular dataset and determined it would be better to also include unpopoular data so we could compare the attributes of both and use them for supervised machine learning. 
 2) While performing lyric analsis, it took time to determine the time out parameters. Determined batches of 600 worked. Dataset contained 2,400 rows. 
 3) Challenge with generating synthetic unpopular data and properly modeling using Random Forest supervised machine learning. 
-4) Too many API calls - limitations to daily use
+4) Too many API calls to Genius.com - limitations to daily use
 5) Future 2024 music analysis - API deprecation as of November 27, 2024, removing developer access to information. 
 
 # Further Explorations:
@@ -100,9 +116,9 @@ Part 8 | Tableau Dashboard (Ashley)
 * Design Neural Network for advanced predictions
 4) Explore additional datasets and their attributes
 * YouTube: music, plays, popularity, LIKES
-* Apple Music
-* Tidal
-* Genius
+* Apple Music: streams, playlists
+* Tidal: different artists & genres
+* Genius: different attributes and lyrics' keywords
 5) Explore 718 unique genres using Unsupervised Learning
 
 # Conclusion:
