@@ -37,7 +37,7 @@ Part 2 | Create Databases (Yiran)
 Using QuickDBD, we sketched an Entity Relationship Diagram (ERD) to form a table schema. We identified the dependencies between each table (primary and foreign keys) and their relationships (one to one/one to many) and the relevant datatypes for each column.
 * Schema = 
 * ERD Diagram = 
-![ERD Diagram]()
+![QuickDBD-MusicLyricsERD](https://github.com/user-attachments/assets/561e94de-8995-49d0-829d-a8e8f0973ad5)
 
 Part 3 | Import Data into Database (Yiran)
 Databases Used = SQL
