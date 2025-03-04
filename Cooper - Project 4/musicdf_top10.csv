@@ -1,0 +1,11 @@
+year,track_name,track_popularity,album,artist_name,artist_genres,main_genre,artist_popularity,danceability,energy,key,loudness,speechiness,acousticness,instrumentalness,liveness,valence,tempo,duration_min
+2019,Cruel Summer,96,Lover,Taylor Swift,['pop'],pop,100,0.552,0.702,9,-5.707,0.157,0.117,2.06e-05,0.105,0.564,169.994,2.97
+2023,Cruel Summer,96,Lover,Taylor Swift,['pop'],pop,100,0.552,0.702,9,-5.707,0.157,0.117,2.06e-05,0.105,0.564,169.994,2.97
+2023,greedy,96,greedy,Tate McRae,['pop'],pop,85,0.75,0.733,6,-3.18,0.0319,0.256,0.0,0.114,0.844,111.018,2.2
+2023,My Love Mine All Mine,94,The Land Is Inhospitable and So Are We,Mitski,"['brooklyn indie', 'pov: indie']",,84,0.504,0.308,9,-14.958,0.0321,0.868,0.135,0.158,0.121,113.95,2.3
+2023,Lovin On Me,93,Lovin On Me,Jack Harlow,"['deep underground hip hop', 'kentucky hip hop', 'pop rap', 'rap']",hip hop,83,0.943,0.558,2,-4.911,0.0568,0.0026,2.19e-06,0.0937,0.606,104.983,2.31
+2023,I Wanna Be Yours,93,AM,Arctic Monkeys,"['garage rock', 'modern rock', 'permanent wave', 'rock', 'sheffield indie']",rock,86,0.464,0.417,0,-9.345,0.0256,0.136,0.022,0.0974,0.479,67.528,3.07
+2006,Unwritten,92,Unwritten,Natasha Bedingfield,"['dance pop', 'pop', 'post-teen pop']",pop,76,0.706,0.8,5,-6.333,0.0399,0.00584,0.0,0.0822,0.629,100.011,4.32
+2023,Water,92,Water,Tyla,[],,80,0.673,0.722,3,-3.495,0.0755,0.0856,0.0,0.137,0.519,117.187,3.34
+2023,I Remember Everything (feat. Kacey Musgraves),92,Zach Bryan,Zach Bryan,['classic oklahoma country'],,88,0.429,0.453,0,-7.746,0.0459,0.554,2e-06,0.102,0.155,77.639,3.79
+2023,Houdini,92,Houdini,Dua Lipa,"['dance pop', 'pop', 'uk pop']",pop,89,0.744,0.789,9,-4.876,0.059,0.0036,0.00144,0.0947,0.866,116.985,3.1
