@@ -3,8 +3,14 @@
 # Team Members:
 * Michelle Moody: Data Acquisition, EDA, ML Modeling
 * Yiran Zhang: ERD, SQL, Lyric API Analysis → scrape/parse → language model, Spotify & Genius APIs
-* Wayne Mitchell: EDA (initial insights), ML Modeling, Lyric Analysis
+* Wayne Mitchell: EDA (initial insights), ML Modeling, Zipfs Law Analysis
 * Ashley Cooper: Data Acquisition, EDA (initial insights), Tableau
+
+# File Locations:
+* EDA & Acquisition: Data_Visualizations.ipynb, Project 4.ipynb [Cooper - Project 4]
+* Machine Learning with Synthetic Data: Project_4_WM_Synthetic_Data.ipynb, zipfs_law.ipynb [Mitchell - Project 4]
+* Machine Learning with Real Data & Evaluation: project4_MM_MachineLearning.ipynb [Moody - Project 4]
+* API Calls & Language Analysis Setup: project4_YZ_APIs.ipynb, popular_lyrics_analysis.ipynb [Zhang - Project 4]
 
 # Project Objectives:
 This project explores music popularity trends from 2000 to 2023 by analyzing song attributes such as popularity scores, genres, and key musical features. Our goal is to train a machine learning model to predict hit songs by identifying patterns in past successful and unsucessful tracks. 
