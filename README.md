@@ -26,6 +26,7 @@ Programming & Software:
 * Jupyter Notebook: used for data cleaning and processing
 * Google Colab: used for cloud-based experimentation with pretrained language models from Hugging Face
 * Tableau:
+* SVD (Secure Data Vault): Python package for generation of synthetic data
 
 Part 1 | ETL (Michelle, Ashley, Wayne)
 Using Jupyter Notebook or VSC, import the multiple excel files that were extracted from:
@@ -70,7 +71,22 @@ Random Forest was the highest rate of accuracy at 82%. It handles non-linear dat
 
 Part 6 | Supervised Machine Learning: Using the known popular dataset and generating a synthetic unpopular dataset (Wayne)
 
-Once it was determined that Random Forest performed at the hightest accuracy. This model was selected to test the performance with the synthetically generated unpopular data. 
+Goal:
+Access the impact on supervised learning classifier performance caused by augmenting, with synthetic data, an unbalnced song-tract dataset, labeled 'unpopular' or 'popular'
+
+Results:
+Balancing the data with synthetic data, in this case, degraded performance of the classifier, as measured by accuracy (Table 1)
+Increasing the stringency of the threshold boundary separating unpopular/ popular tracts, in this case, improved classifier accuracy (Fig. 1)
+
+
+
+
+
+Technical learning:
+In the course of the project, the RF classifier examined here appeared to be performing impossibly well (99.999999% accuracy). Scikt divides the data into train and test sets, so overfitting didnt seem a likely explaination. This deranged perhavior was diagnosed as an artifact introduced during workup. Specifically. a 'popularity_class' (0/1) colulumn was gererated and added, but, the 'track_popularity' score column used to generate 'popularity_class' was not removed. Since the boolean'popularity_class' value is explicitly dependent on the numeric 'track_popularity' value, the classifier "cheated" and simply learned on 'track_popularity'. When we removed 'track_popularity', the classifer became well-behaved.
+
+Details, code  and visualizations in jupyter notebook 'Project_4_WM_Synthetic_Data.ipynb'
+
 
 Part 7 | Lyric API Analysis (Yiran)
 
