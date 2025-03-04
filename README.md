@@ -24,7 +24,6 @@ Programming & Software:
 * QuickDBD: used for sketching the ERD table and generating sql import
 * PostgresSQL: relational database management system
 * Jupyter Notebook: used for data cleaning and processing
-* VBS:
 * Google Colab: used for cloud-based experimentation with pretrained language models from Hugging Face
 * Tableau:
 
@@ -35,7 +34,7 @@ Using Jupyter Notebook or VSC, import the multiple excel files that were extract
 
 Part 2 | Create Databases (Yiran)
 Using QuickDBD, we sketched an Entity Relationship Diagram (ERD) to form a table schema. We identified the dependencies between each table (primary and foreign keys) and their relationships (one to one/one to many) and the relevant datatypes for each column.
-* Schema = 
+
 * ERD Diagram = 
 ![QuickDBD-MusicLyricsERD](https://github.com/user-attachments/assets/561e94de-8995-49d0-829d-a8e8f0973ad5)
 
@@ -73,8 +72,6 @@ Part 6 | Supervised Machine Learning: Using the known popular dataset and genera
 
 Once it was determined that Random Forest performed at the hightest accuracy. This model was selected to test the performance with the synthetically generated unpopular data. 
 
-![Accuracy - Round 2]() 
-
 Part 7 | Lyric API Analysis (Yiran)
 
 The goal of this analysis was to examine words and language patterns used in popular & unpopular songs' lyrics. Most of the time was spent in ETL to set up API calls and creating processes to scrape lyrics for each song in an efficient manner, resulting in a very large dataset of popular songs and their full lyrics. 
@@ -92,6 +89,7 @@ Process
 Conclusion: Ideally, using "popular" and "unpopular" song lyrics datasets would help train a language model if given enough time and resources. Using a pretrained model, however, is useful in categorizing and analyzing sentiment. It would be interesting to experiment with different ways of breaking down a song so that smaller pieces of the song (e.g., line by line) are passed through the model for more precision. With more time, this could be a powerful tool for analyzing the content of lyrics.
 
 Part 8 | Tableau Dashboard (Ashley)
+Tableau: https://tinyurl.com/mwj9xtdu 
 
 # Data Sources:
 * https://www.kaggle.com/datasets/josephinelsy/spotify-top-hit-playlist-2010-2022 
@@ -122,4 +120,10 @@ Part 8 | Tableau Dashboard (Ashley)
 5) Explore 718 unique genres using Unsupervised Learning
 
 # Conclusion:
+This project successfully explored the relationship between song attributes and popularity from 2000 to 2023, using supervised machine learning models to predict hit songs. By analyzing key musical features, genre trends, and lyrics, we identified patterns that contribute to a song's success.
 
+Our findings highlight Random Forest as the best-performing model, achieving 82% accuracy in predicting song popularity. Its ability to handle non-linear relationships makes it a strong choice for analyzing diverse musical attributes across multiple datasets. Additionally, our lyric sentiment analysis provided valuable insights into how language and messaging contribute to a song’s appeal.
+
+Despite challenges such as dataset limitations, API constraints, and synthetic data generation, we demonstrated the potential for predictive modeling in the music industry. Moving forward, incorporating additional datasets (e.g., YouTube, Apple Music, Tidal) and experimenting with deep learning models could further refine predictions. Exploring unsupervised learning techniques on the vast number of music genres may also uncover hidden patterns in song popularity.
+
+Ultimately, this project provides a scalable foundation for future research in music analytics, offering valuable insights for artists, producers, and the streaming industry to better understand the elements of a hit song.
